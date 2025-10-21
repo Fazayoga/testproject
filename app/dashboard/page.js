@@ -45,7 +45,6 @@ export default function Dashboard() {
 
   return (
     <div className={`d-flex vh-100 ${darkMode ? "bg-dark text-light" : "bg-light text-dark"}`}>
-      {/* Sidebar */}
       <div
         className={`sidebar position-fixed top-0 start-0 h-100 p-3 shadow ${
           darkMode ? "bg-secondary text-light" : "bg-white text-dark"
@@ -93,12 +92,10 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Overlay */}
       {sidebarOpen && (
         <div className="overlay position-fixed top-0 start-0 w-100 h-100 d-lg-none" onClick={toggleSidebar}></div>
       )}
 
-      {/* Main Content */}
       <div className={`flex-grow-1 p-4 overflow-auto content ${sidebarOpen ? "blurred" : ""}`}>
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div className="d-flex align-items-center gap-2">

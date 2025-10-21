@@ -64,7 +64,6 @@ export default function LoginPage() {
         )}
 
         <form onSubmit={handleSubmit}>
-          {/* Email */}
           <div className="mb-3">
             <label className="form-label fw-semibold">Email / Username</label>
             <input
@@ -77,7 +76,6 @@ export default function LoginPage() {
             />
           </div>
 
-          {/* Password */}
           <div className="mb-3 position-relative">
             <label className="form-label fw-semibold">Password</label>
             <div className="input-group input-group-lg">
@@ -100,7 +98,6 @@ export default function LoginPage() {
             </div>
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             className="btn btn-primary w-100 fw-semibold mt-3 py-2"
