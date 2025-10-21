@@ -69,35 +69,43 @@ project-root/
 ```bash
 git clone <repository-url>
 cd <project-folder>
+```
 
 2. **Install dependencies**
+```bash
 npm install
-
+```
 3. **Setup database MySQL**
+```bash
 CREATE DATABASE testproject;
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(255) UNIQUE NOT NULL,
   password VARCHAR(255) NOT NULL
 );
-
+```
 4. **Buat file .env.local**
+```bash
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=
 DB_NAME=testproject
 JWT_SECRET=mysecret
 COOKIE_SECURE=false
-
+```
 5. **Jalankan development server**
+```bash
 npm run dev
-
+```
 6. **Buka di browser**
+```bash
 http://localhost:3000/login
-
+```
 7. **Test login**
+```bash
 Masukkan email dan password yang sudah terdaftar di database.
 Jika berhasil, akan diarahkan ke /dashboard.
 
 email : adminbaru1029@gmail.com
 pass  : kepobanget0011
+```
